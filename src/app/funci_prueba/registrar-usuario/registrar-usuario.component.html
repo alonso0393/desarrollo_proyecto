@@ -1,0 +1,28 @@
+
+<app-navbar></app-navbar>
+<h1 class="register-title">Formulario de Registro</h1>
+<form class="register" [formGroup]="datosformulario">
+
+<div class="register-switch">
+<input type="radio" formControlName="sexo_usuario" name="sexo_usuario" id="" value="f" id="sex_f" class="register-switch-input">
+<label for="sex_f" class="register-switch-label">Femenino</label>
+
+<input type="radio" formControlName="sexo_usuario" name="sexo_usuario" id="" value="m" id="sex_m" class="register-switch-input" checked>
+<label for="sex_m" class="register-switch-label">Masculino</label>
+<p class="validar_color">{{vali}}</p>
+</div>
+
+<input type="number" class="register-input" formControlName="cedula_usuario" name="cedula_usuario" id="" placeholder="Cedula">
+<input type="text" class="register-input" formControlName="nombre_usuario" name="nombre_usuario" id="" placeholder="Nombre">
+<input type="email" class="register-input" formControlName="email_usuario" name="email_usuario" id="" placeholder="Email">
+<input type="text" class="register-input" formControlName="usuario" name="usuario" id="" placeholder="Usuario">
+<input type="password" class="register-input" formControlName="password" name="password" id="" placeholder="Password">
+
+<button (click)="altausuario()" class="register-button">Registrar</button>
+ 
+
+
+</form>
+
+
+
